@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+   
+   <bean id="aPoupanca" class="modelo.ContaPoupanca" >
+   		<property name="nome" value="Ponpancudo" ></property>
+     	<property name="numero"  value="x-lsdfjksl"></property>
+     	<property name="saldo"  value="-8000"></property>
+   </bean>
+   
+   <bean id="aConta"  class="modelo.ContaCorrente" >
+     <property name="nomeCorrentista" value="Jurema" ></property>
+     <property name="numeroConta"  value="12324"></property>
+   </bean>
+   
+   <bean id="oRelatorio" class="controle.Relatorio" >
+      <property name="conta" ref="aConta" ></property>
+   </bean>
+   
+   
+   	
+</beans>
+
+
+
+
+
+
